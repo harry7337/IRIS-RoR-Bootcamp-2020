@@ -1,0 +1,128 @@
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (80.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (66.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-10 14:47:24.630597"], ["updated_at", "2021-02-10 14:47:24.630597"]]
+  [1m[36mTRANSACTION (50.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-02-10 20:17:48 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/harry16614/.rvm/gems/ruby-3.0.0/gems/railties-6.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/harry16614/.rvm/gems/ruby-3.0.0/gems/railties-6.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.8ms | Allocations: 518)
+Completed 200 OK in 72ms (Views: 44.4ms | ActiveRecord: 0.0ms | Allocations: 4176)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-10 22:04:10 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 1.2ms | Allocations: 293)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/harry16614/ROR/S1/Local Workspace/hello_world/public/packs
+[Webpacker] Hash: ce14c115e350524bb5a9
+Version: webpack 4.46.0
+Time: 5518ms
+Built at: 10/02/2021 10:04:24 pm
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 13581.9ms | Allocations: 15008)
+Completed 200 OK in 13614ms (Views: 13595.5ms | ActiveRecord: 0.0ms | Allocations: 18063)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2021-02-10 22:04:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/about_me" for ::1 at 2021-02-10 22:05:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/about_me" for ::1 at 2021-02-10 22:06:16 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/about_me" for ::1 at 2021-02-10 22:07:52 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/" for 127.0.0.1 at 2021-02-10 22:24:53 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 0.6ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 5925)
+Completed 200 OK in 32ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 9080)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2021-02-10 22:25:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/about_me" for ::1 at 2021-02-11 08:48:47 +0530
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 13.7ms | Allocations: 297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.1ms | Allocations: 5960)
+Completed 200 OK in 179ms (Views: 143.4ms | ActiveRecord: 0.0ms | Allocations: 9016)
+
+
+Started GET "/about_me" for ::1 at 2021-02-11 08:49:15 +0530
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 0.4ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3397)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4643)
+
+
+Started GET "/" for ::1 at 2021-02-11 09:00:14 +0530
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 6.9ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 279.4ms | Allocations: 5924)
+Completed 200 OK in 324ms (Views: 302.5ms | ActiveRecord: 0.0ms | Allocations: 9079)
+
+
+Started GET "/about_me" for ::1 at 2021-02-11 09:00:20 +0530
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 21.3ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.1ms | Allocations: 3147)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.0ms | Allocations: 3717)
+
+
